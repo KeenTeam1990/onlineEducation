@@ -1,0 +1,89 @@
+{
+    "id": "UCE-MP",
+    "displayName": "【UCE知识付费】知识付费、在线教育云端一体项目[前台-开源]，已接入个人支付，持续更新中",
+    "version": "0.4.1",
+    "description": "UCE是基于UniCloud开发的在线教育点播收费系统、内容变现系统，让您一键开展线上教育业务。支持业务可视化装修，拒绝千篇一律。",
+    "keywords": [
+        "内容变现",
+        "知识付费",
+        "教育",
+        "在线学习",
+        "可视化布局"
+    ],
+    "main": "main.js",
+    "dependencies": {
+        "uview-ui": "^1.8.4"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "VK",
+    "license": "Apache",
+    "repository": "",
+    "name": "vk-unicloud-router",
+    "engines": {
+        "HBuilderX": "^3.1.2"
+    },
+    "dcloudext": {
+        "category": [
+            "uniCloud",
+            "云端一体项目模板"
+        ],
+        "sale": {
+            "regular": {
+                "price": "0.00"
+            },
+            "sourcecode": {
+                "price": "0.00"
+            }
+        },
+        "contact": {
+            "qq": "374558411"
+        },
+        "declaration": {
+            "ads": "无",
+            "data": "插件不采集任何数据",
+            "permissions": "无"
+        },
+        "npmurl": ""
+    },
+    "uni_modules": {
+        "platforms": {
+            "cloud": {
+                "tcb": "y",
+                "aliyun": "y"
+            },
+            "client": {
+                "App": {
+                    "app-vue": "y",
+                    "app-nvue": "y"
+                },
+                "H5-mobile": {
+                    "Safari": "y",
+                    "Android Browser": "y",
+                    "微信浏览器(Android)": "y",
+                    "QQ浏览器(Android)": "y"
+                },
+                "H5-pc": {
+                    "Chrome": "y",
+                    "IE": "y",
+                    "Edge": "y",
+                    "Firefox": "y",
+                    "Safari": "y"
+                },
+                "小程序": {
+                    "微信": "y",
+                    "阿里": "y",
+                    "百度": "y",
+                    "字节跳动": "y",
+                    "QQ": "y"
+                },
+                "快应用": {
+                    "华为": "y",
+                    "联盟": "y"
+                }
+            }
+        }
+    }
+}

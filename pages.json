@@ -1,0 +1,327 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/login/index/index",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"navigationBarBackgroundColor": "#1663ff",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/login/register/register",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"navigationBarBackgroundColor": "#1663ff",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/login/forget/forget",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"navigationBarBackgroundColor": "#1663ff",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/member/member",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+
+		}, {
+			"path": "pages/community/community",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+
+		}, {
+			"path": "pages/courses/courses",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+
+		}, {
+			"path": "pages/courses/detail",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/courses/video",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/live_courses/courses",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+
+		}, {
+			"path": "pages/live_courses/detail",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/live_courses/video",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/member/editInfo",
+			"style": {
+				"navigationBarTitleText": "资料编辑",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/member/setting",
+			"style": {
+				"navigationBarTitleText": "设置",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/member/role",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"navigationBarTitleText": "会员",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/pay/pay",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"navigationBarTitleText": "订单支付",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/pay/success/success",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"navigationBarTitleText": "支付成功",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/pay/payment/payment",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"navigationBarTitleText": "支付",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/universal/universal",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/order/order",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"navigationBarTitleText": "订单列表",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/order/detail",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"navigationBarTitleText": "订单详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/member/courses",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"navigationBarTitleText": "已购课程",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/community/article",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"navigationBarTitleText": "文章详情",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/search/search",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"navigationBarTitleText": "内容搜索",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/wallet/wallet",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"navigationBarTitleText": "钱包",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/team/team",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"navigationBarTitleText": "团队",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/team/detail",
+			"style": {
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				},
+				"navigationBarTitleText": "成员详情",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"tabBar": {
+		"color": "#333333",
+		"selectedColor": "#005CFF",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/index@2x.png",
+				"selectedIconPath": "static/tabbar/index-active@2x.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/courses/courses",
+				"iconPath": "static/tabbar/classes@2x.png",
+				"selectedIconPath": "static/tabbar/classes-active@2x.png",
+				"text": "优课"
+			}, {
+				"pagePath": "pages/community/community",
+				"iconPath": "static/tabbar/community@2x.png",
+				"selectedIconPath": "static/tabbar/community-active@2x.png",
+				"text": "发现"
+			}, {
+				"pagePath": "pages/member/member",
+				"iconPath": "static/tabbar/member@2x.png",
+				"selectedIconPath": "static/tabbar/member-active@2x.png",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "UCE知识付费平台",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"navigateToMiniProgramAppIdList": [
+		"wxd9634afb01b983c0"
+	]
+}

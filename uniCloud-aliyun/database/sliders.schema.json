@@ -1,0 +1,58 @@
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"thumb": {
+			"bsonType": "object",
+			"description": "图片地址"
+		},
+		"url": {
+			"bsonType": "string",
+			"description": "跳转地址"
+		},
+		"title": {
+			"bsonType": "string",
+			"description": "标题(可为空)"
+		},
+		"platform": {
+			"bsonType": "string",
+			"description": "所属平台"
+		},
+		"sort": {
+			"bsonType": "int",
+			"description": "排序"
+		},
+		"status": {
+			"bsonType": "int",
+			"description": "状态：0 未启用 1 已启用",
+			"title": "图片状态",
+			"defaultValue": 1,
+			"enum": [{
+					"text": "未启用",
+					"value": 0
+				},
+				{
+					"text": "已启用",
+					"value": 1
+				}
+			]
+		},
+		"create_date": {
+			"bsonType": "timestamp",
+			"description": "创建时间"
+		},
+		"deleted_date": {
+			"bsonType": "timestamp",
+			"description": "删除时间"
+		}
+	}
+}

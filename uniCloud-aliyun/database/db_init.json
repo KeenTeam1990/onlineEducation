@@ -1,0 +1,242 @@
+// 在本文件中可配置云数据库初始化，数据格式见：https://uniapp.dcloud.io/uniCloud/cf-database?id=db_init
+
+// 编写完毕后对本文件点右键，可按配置规则创建表和添加数据
+
+{
+	"vk-test": {
+		"data": [
+			
+		],
+		"index": [
+			{
+				"IndexName": "location",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "location","Direction": "2dsphere"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"uni-id-users": {
+		"data": [
+			{
+				"_id":"001",
+				"username": "admin",
+				"password": "03caebb36670995fc261a275d212cad65e4bbebd",
+				"register_date": 1596416400000,
+				"register_ip": "127.0.0.1",
+				"nickname": "超级管理员",
+				"role":["admin"],
+				"token": []
+			}
+		],
+		"index": [
+			{
+				"IndexName": "username",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "username","Direction": "1"}],"MgoIsUnique": false}
+			}, 
+			{
+				"IndexName": "mobile",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "mobile","Direction": "1"}],"MgoIsUnique": false}
+			}, 
+			{
+				"IndexName": "email",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "email","Direction": "1"}],"MgoIsUnique": false}
+			}, 
+			{
+				"IndexName": "wx_openid.app-plus",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "wx_openid.app-plus","Direction": "1"}],"MgoIsUnique": false}
+			}, 
+			{
+				"IndexName": "wx_openid.mp-weixin",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "wx_openid.mp-weixin","Direction": "1"}],"MgoIsUnique": false}
+			}, 
+			{
+				"IndexName": "wx_unionid",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "wx_unionid","Direction": "1"}],"MgoIsUnique": false}
+			}, 
+			{
+				"IndexName": "ali_openid",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "ali_openid","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "my_invite_code",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "my_invite_code","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "inviter_uid",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "inviter_uid","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "invite_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "invite_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "role",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "role","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "register_date",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "register_date","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"opendb-verify-codes": {
+		"data": [],
+		"index": [
+			{
+				"IndexName": "mobile",
+				"MgoKeySchema": {
+					"MgoIndexKeys": [{
+						"Name": "mobile",
+						"Direction": "1"
+					}, {
+						"Name": "code",
+						"Direction": "1"
+					}],
+					"MgoIsUnique": false
+				}
+			},
+			{
+				"IndexName": "email",
+				"MgoKeySchema": {
+					"MgoIndexKeys": [{
+						"Name": "email",
+						"Direction": "1"
+					}, {
+						"Name": "code",
+						"Direction": "1"
+					}],
+					"MgoIsUnique": false
+				}
+			},
+			{
+				"IndexName": "type",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "type","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "state",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "state","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"opendb-components-dynamic":{
+		"data": [],
+		"index": [
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "data_id",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "data_id","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "title",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "title","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"uni-id-log":{
+		"data": [],
+		"index": [
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "user_id",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "user_id","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"uni-id-roles":{
+		"data": [
+			{
+				"_id": "001",
+				"_add_time": 1596416400000,
+				"enable":true,
+				"role_id":"admin",
+				"role_name": "超级管理员",
+				"comment":"系统内置角色 - 请勿修改",
+				"permission": []
+			}
+		],
+		"index": [
+			{
+				"IndexName": "role_id",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "role_id","Direction": "1"}],"MgoIsUnique": true}
+			},
+			{
+				"IndexName": "permission",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "permission","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "role_name",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "role_name","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"uni-id-permissions":{
+		"data": [],
+		"index": [
+			{
+				"IndexName": "permission_id",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "permission_id","Direction": "1"}],"MgoIsUnique": true}
+			},
+			{
+				"IndexName": "parent_id",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "parent_id","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "url",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "url","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "sort",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "sort","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"opendb-admin-menus":{
+		"data": [],
+		"index": [
+			{
+				"IndexName": "menu_id",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "menu_id","Direction": "1"}],"MgoIsUnique": true}
+			},
+			{
+				"IndexName": "parent_id",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "parent_id","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "url",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "url","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "sort",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "sort","Direction": "1"}],"MgoIsUnique": false}
+			}
+		]
+	},
+	"opendb-global-data":{
+		"data":[
+
+		],
+		"index": [
+			{
+				"IndexName": "_add_time",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "_add_time","Direction": "1"}],"MgoIsUnique": false}
+			},
+			{
+				"IndexName": "key",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "key","Direction": "1"}],"MgoIsUnique": true}
+			},
+			{
+				"IndexName": "expired_at",
+				"MgoKeySchema": {"MgoIndexKeys": [{"Name": "expired_at","Direction": "1"}],"MgoIsUnique": true}
+			}
+		]
+	}
+}
