@@ -61,6 +61,4 @@ npm install uview-ui
 
 ## 联系我们
 
-<p>
-<img src="http://video.nine123.cn/images/2021/04/02/09fc6b60ca47b.jpg" width=200>
-</p>
+各位同学觉得有帮助的欢迎给个star，我会继续优化代码。 如果有不懂的地方可以[邮箱](Keen_Team@163.com)
