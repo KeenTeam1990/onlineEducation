@@ -12,7 +12,7 @@
 | <a href="https://uce.aidny.cn/admin">教师后台</a> | teacher02 | teacher02 |
 | <a href="https://uce.aidny.cn/admin">教师后台</a> | teacher03 | teacher03 |
 | <a href="https://uce.aidny.cn">移动端</a> | teacher04 | teacher04 |
-| PC端 | teacher05 | teacher05 |
+| <a href="https://uce.aidny.cn">PC端</a> | teacher05 | teacher05 |
 
 <img src="http://video.nine123.cn/images/2021/04/07/818ed6cc3607c.jpg" width=100 alt="gh_df23a14d9ee0_258.jpg" title="gh_df23a14d9ee0_258.jpg" />
 
